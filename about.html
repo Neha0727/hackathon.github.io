@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce clothing website</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+          <div class="navbar">
+    
+          <div class="logo">
+            <img src="images/shopee.png" width="50px">
+          </div>
+           <nav>
+             <ul id="menuitems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+             </ul>
+           </nav>
+           <a href="cart.html"><img src="images/red.png" width="30px" height="30px"></a>
+           <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+           </div>
+        </div>
+        </div>
+
+
+        <div class="about">
+            <div class="small-container">
+              <div class="row">
+                 <div class="col-2">
+                 <img src="images/about.jpg" class="about-img">
+                </div>
+             <div class="col-2">
+                 <h2 >About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eius sint maxime iure similique?
+                  consectetur nesciunt eius molestias, vel obcaecati ab?Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Culpa eius sint maxime iure similique?
+                  Odio nisi, mollitia voluptatibus quo ducimus ut fugiat nulla incidunt, officiis facilis quos 
+                  consectetur nesciunt eius molesti impedit nesciunt error minus.
+                 </p>
+                 <a href="" class="btn">Read More &#8594;</a>
+             </div>
+             </div>
+         </div>
+         </div>
+
+
+ <!-----------footer---------->
+
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/shopee.png" width="50px" >
+                <p>Lorem ipsum dolor sit amet, ccumque placeat, dolor dolore.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>You Tube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <P class="copyright">Copyright 2022 - Easy tutorials</P>
+    </div>
+</div>
+    
+
+ <!----------js for toggle menu------->
+ <script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if( menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px";
+        }
+        else{
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+
+<script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide' );
+      splide.mount();
+    } );
+  </script>
+</body>
+</html>
