@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce clothing website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+          <div class="navbar">
+    
+          <div class="logo">
+            <img src="images/shopee.png" width="50px">
+          </div>
+           <nav>
+             <ul id="menuitems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+             </ul>
+           </nav>
+           <a href="cart.html"><img src="images/red.png" width="30px" height="30px"></a>
+           <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+           </div>
+        </div>
+        </div>
+
+        <div class="contactus">
+            <div class="col-5">
+            <div class="container">
+                <h2>Contact Us</h2>         
+            </div>
+           <div class="box">
+            <!------form------>
+            <div class="contact form">
+              <h3>Send Message</h3>
+                <form>
+                    <div class="formbox">
+                        <div class="rowbox1">
+                            <div class="inputbox">
+                                <span>First Name</span>
+                                <input type="text" placeholder="John">
+                            </div>
+                            <div class="inputbox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="leo">
+                            </div>
+                        </div>
+                        <div class="rowbox1">
+                            <div class="inputbox">
+                                <span>Email</span>
+                                <input type="text" placeholder="Johnleo@gmail.com">
+                            </div>
+                            <div class="inputbox">
+                                <span>Mobile</span>
+                                <input type="text" placeholder="+91 7440443560">
+                            </div>
+                        </div>
+                        <div class="rowbox2">
+                            <div class="inputbox">
+                                <span>Message</span>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="rowbox2">
+                            <div class="inputbox">
+                                <input type="submit" value="Send" >
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!------info box------>
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infobox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>Cannaught Places,Madhya Pradesh<br> INDIA</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="">shopee@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel">+91 7440483560</a>
+                    </div>
+                </div>
+                <!------social media links---->
+                <div class="social">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </div>
+            </div>
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117763.68784094015!2d75.
+                79380942842137!3d22.723957496501797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962
+                fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v16611521
+                82307!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"
+                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           </div>
+           </div>
+        </div>
+
+
+        
+         
+
+
+ <!-----------footer---------->
+
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/shopee.png" width="50px" >
+                <p>Lorem ipsum dolor sit amet, ccumque placeat, dolor dolore.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>You Tube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <P class="copyright">Copyright 2022 - Easy tutorials</P>
+    </div>
+</div>
+    
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+ <!----------js for toggle menu------->
+ <script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if( menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px";
+        }
+        else{
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
